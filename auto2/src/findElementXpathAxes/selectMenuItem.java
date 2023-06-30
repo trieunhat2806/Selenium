@@ -25,8 +25,8 @@ public class selectMenuItem {
 	
 	public void selectMenuItem1(String MenuItem) {
 		
-		List<WebElement> item= driver.findElements(By.xpath("//li[starts-with(@class,'item')]"
-				+ "/child::a[contains(text()," + MenuItem + ")]"));
+		List<WebElement> item= driver.findElements(By.xpath("//a[normalize-space()='Home']"
+				+ "//following::a[@class='item'][normalize-space()="+MenuItem+"]"));
 		
 		for(int i=0; i<item.size();i++) {
 			
