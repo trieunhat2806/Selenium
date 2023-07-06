@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="findElementXpathAxes.selectMenuItem">
+      <class name="findElementXpathAxes.Xgear_Xpath">
         <methods>
-          <include name="Test"/>
           <include name="beforeTest"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- findElementXpathAxes.selectMenuItem -->
+      </class> <!-- findElementXpathAxes.Xgear_Xpath -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

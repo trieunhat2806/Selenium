@@ -18,8 +18,8 @@ public class Xpath {
 			
 			 List <WebElement> listElement = driver.findElements
 					 (By.xpath("//div[.//a[text()='SELENIUM']]"
-					 		+ "/ancestor::div[@class='rt-grid-2 rt-omega']"
-					 		+ "/following-sibling::div"));
+						 		+ "/ancestor::div[@class='rt-grid-2 rt-omega']"
+						 		+ "/following-sibling::div"));
 			 
 		        for (WebElement webElement : listElement) {
 		            System.out.println(webElement.getText());
