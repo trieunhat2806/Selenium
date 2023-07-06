@@ -10,39 +10,36 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 @SuppressWarnings("unused")
-public class selectMenuItem {
+public class Xgear_Xpath {
 	private WebDriver driver;
 	private ChromeOptions options;
 	private String baseUrl;
 	
+	@SuppressWarnings("deprecation")
 	@BeforeTest
 	public void beforeTest() throws Exception{
 		options = new ChromeOptions();
 		options.addArguments("Start-maximized");
 		driver=new ChromeDriver(options);
-		baseUrl="https://xgear.net/san-pham/tu-chon-cau-hinh/";
-	}
-	
-	public void selectMenuItem1(String MenuItem) {
+		baseUrl="https://github.com/trieunhat2806";
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+}
+	//"//a[@id='repositories-tab']/..//a[@id="+Xitem+"]"
+	public void SelectItem(String Xitem) {
+		List <WebElement> item= driver.findElements(By.xpath("//span[@title='PRACTICE-1']//preceding::span[@title="+Xitem+"]"));
 		
-		List<WebElement> item= driver.findElements(By.xpath("//a[normalize-space()='Home']"
-				+ "//following::a[@class='item'][normalize-space()="+MenuItem+"]"));
 		
 		for(int i=0; i<item.size();i++) {
 			
-			if(item.get(i).getText().contentEquals(MenuItem)) {
+			if(item.get(i).getText().contentEquals(Xitem)) {
 				item.get(i).click();
 				break;
 			}
 		}
 	}
-	
 	@Test
 	public void Test() throws Exception{
 		driver.get(baseUrl);
-		selectMenuItem1("Testing");
+		SelectItem("trieunhat2806");
 	}
 }
-
-	
-	

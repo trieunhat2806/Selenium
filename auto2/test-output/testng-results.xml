@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-01T03:48:43 ICT" name="Default suite" finished-at="2023-07-01T03:48:51 ICT" duration-ms="8209">
+  <suite started-at="2023-07-06T21:27:12 ICT" name="Default suite" finished-at="2023-07-06T21:27:26 ICT" duration-ms="13815">
     <groups>
     </groups>
-    <test started-at="2023-07-01T03:48:43 ICT" name="Default test" finished-at="2023-07-01T03:48:51 ICT" duration-ms="8209">
-      <class name="findElementXpathAxes.selectMenuItem">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:findElementXpathAxes.selectMenuItem@2e8c1c9b]" started-at="2023-07-01T03:48:43 ICT" name="beforeTest" finished-at="2023-07-01T03:48:45 ICT" duration-ms="1793" status="PASS">
+    <test started-at="2023-07-06T21:27:12 ICT" name="Default test" finished-at="2023-07-06T21:27:26 ICT" duration-ms="13815">
+      <class name="findElementXpathAxes.Xgear_Xpath">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:findElementXpathAxes.Xgear_Xpath@2e8c1c9b]" started-at="2023-07-06T21:27:12 ICT" name="beforeTest" finished-at="2023-07-06T21:27:14 ICT" duration-ms="2031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Test()[pri:0, instance:findElementXpathAxes.selectMenuItem@2e8c1c9b]" started-at="2023-07-01T03:48:45 ICT" name="Test" finished-at="2023-07-01T03:48:51 ICT" duration-ms="6380" status="PASS">
+        <test-method signature="Test()[pri:0, instance:findElementXpathAxes.Xgear_Xpath@2e8c1c9b]" started-at="2023-07-06T21:27:14 ICT" name="Test" finished-at="2023-07-06T21:27:26 ICT" duration-ms="11753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test -->
-      </class> <!-- findElementXpathAxes.selectMenuItem -->
+      </class> <!-- findElementXpathAxes.Xgear_Xpath -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
