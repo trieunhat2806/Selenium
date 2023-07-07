@@ -16,6 +16,10 @@ public class Xpath {
 			 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.get("https://demo.guru99.com/test/guru99home/");	
 			
+			// //div[.//a[text()='SELENIUM']]"
+	 		//+ "/ancestor::div[@class='rt-grid-2 rt-omega']"
+	 		//+ "/following-sibling::div
+			
 			 List <WebElement> listElement = driver.findElements
 					 (By.xpath("//div[.//a[text()='SELENIUM']]"
 						 		+ "/ancestor::div[@class='rt-grid-2 rt-omega']"
