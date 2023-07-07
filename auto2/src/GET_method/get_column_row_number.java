@@ -1,5 +1,4 @@
 package GET_method;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -70,7 +69,7 @@ public class get_column_row_number {
 			//String cell= rows_cols.get(b).getText();
 			//System.out.println("cell value of row number "+row+" and column number "+col+" is "+cell);
 		//}
-		//}
+//}
 		 String a = value.getText();
 		 System.out.println("Result: " + a);
 		return 0;
