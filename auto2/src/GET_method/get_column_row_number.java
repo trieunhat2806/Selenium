@@ -49,7 +49,7 @@ public class get_column_row_number {
 		String baseUrl=("https://demo.guru99.com/test/web-table-element.php");
 		driver.get(baseUrl);
 		
-		WebElement table= driver.findElement(By.xpath("/html/body/table/tbody"));
+		WebElement table= driver.findElement(By.xpath("/html/body/div/div[3]/div[1]/table/tbody"));
 		List<WebElement> rows_cols_table= table.findElements(By.tagName("tr"));
 		int rows_count=rows_cols_table.size();
 		int cols_count=rows_cols_table.size();
