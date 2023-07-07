@@ -80,10 +80,17 @@ public class get_column_row_number {
 		WebDriver driver= new ChromeDriver();
 		driver.get("https://demo.guru99.com/test/web-table-element.php");
 		
+
 		List<WebElement> column = driver.findElements(By.xpath("//*[@id=\"leftcontainer\"]"
 				+ "/table/thead/tr/th"));
 		List<WebElement> row = driver.findElements(By.xpath("//*[@id='leftcontainer']"
 				+ "/table/tbody/tr"));
+
+		WebElement table= driver.findElement(By.xpath("/html/body/div/div[3]/div[1]/table/tbody"));
+		List<WebElement> rows_cols_table= table.findElements(By.tagName("tr"));
+		int rows_count=rows_cols_table.size();
+		int cols_count=rows_cols_table.size();
+
 		
 		for(int rows = 1; rows<row.size(); rows++)
 		{
