@@ -5,7 +5,6 @@
     <classes>
       <class name="GET_method.get_column_row_number">
         <methods>
-          <include name="beforeTest"/>
           <include name="Test"/>
         </methods>
       </class> <!-- GET_method.get_column_row_number -->
