@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="findElementXpathAxes.selectMenuItem">
+      <class name="GET_method.get_column_row_number">
         <methods>
-          <include name="Test"/>
           <include name="beforeTest"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- findElementXpathAxes.selectMenuItem -->
+      </class> <!-- GET_method.get_column_row_number -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
