@@ -21,6 +21,7 @@ public class selectMenuItem {
 		options.addArguments("Start-maximized");
 		driver=new ChromeDriver(options);
 		baseUrl="https://xgear.net/san-pham/tu-chon-cau-hinh/";
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	public void selectMenuItem1(String MenuItem) {

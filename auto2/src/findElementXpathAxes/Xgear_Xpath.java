@@ -40,6 +40,7 @@ public class Xgear_Xpath {
 	@Test
 	public void Test() throws Exception{
 		driver.get(baseUrl);
-		SelectItem("trieunhat2806");
+		SelectItem("Form");
+		driver.close();
 	}
 }
