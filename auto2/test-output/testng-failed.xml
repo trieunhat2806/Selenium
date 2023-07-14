@@ -6,6 +6,7 @@
       <class name="findElementXpathAxes.github_search_check">
         <methods>
           <include name="beforeTest"/>
+          <include name="afterTest"/>
           <include name="Test"/>
         </methods>
       </class> <!-- findElementXpathAxes.github_search_check -->
