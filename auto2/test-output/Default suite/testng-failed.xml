@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="findElementXpathAxes.github_search_check">
+      <class name="github_project.NewTest">
         <methods>
+          <include name="goToSignInPage"/>
+          <include name="afterTest"/>
+          <include name="signIn"/>
           <include name="beforeTest"/>
-          <include name="Test"/>
         </methods>
-      </class> <!-- findElementXpathAxes.github_search_check -->
+      </class> <!-- github_project.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
