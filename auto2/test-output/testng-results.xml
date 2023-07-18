@@ -2,24 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T16:41:43 ICT" name="Default suite" finished-at="2023-07-14T16:41:54 ICT" duration-ms="10711">
+  <suite started-at="2023-07-19T00:16:25 ICT" name="Default suite" finished-at="2023-07-19T00:16:30 ICT" duration-ms="5064">
     <groups>
     </groups>
-    <test started-at="2023-07-14T16:41:43 ICT" name="Default test" finished-at="2023-07-14T16:41:54 ICT" duration-ms="10711">
-      <class name="findElementXpathAxes.github_search_check">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:findElementXpathAxes.github_search_check@449a4f23]" started-at="2023-07-14T16:41:43 ICT" name="beforeTest" finished-at="2023-07-14T16:41:45 ICT" duration-ms="1916" status="PASS">
+    <test started-at="2023-07-19T00:16:25 ICT" name="Default test" finished-at="2023-07-19T00:16:30 ICT" duration-ms="5064">
+      <class name="github_project.case2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:25 ICT" name="beforeTest" finished-at="2023-07-19T00:16:27 ICT" duration-ms="2754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="Test()[pri:0, instance:findElementXpathAxes.github_search_check@449a4f23]" started-at="2023-07-14T16:41:45 ICT" name="Test" finished-at="2023-07-14T16:41:54 ICT" duration-ms="8763" status="PASS">
+        <test-method is-config="true" signature="goToSignInPage()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:27 ICT" name="goToSignInPage" finished-at="2023-07-19T00:16:28 ICT" duration-ms="754" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:findElementXpathAxes.github_search_check@449a4f23]" started-at="2023-07-14T16:41:54 ICT" name="afterTest" finished-at="2023-07-14T16:41:54 ICT" duration-ms="1" status="PASS">
+        </test-method> <!-- goToSignInPage -->
+        <test-method signature="signIn()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:28 ICT" name="signIn" finished-at="2023-07-19T00:16:29 ICT" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:29 ICT" name="afterTest" finished-at="2023-07-19T00:16:30 ICT" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- findElementXpathAxes.github_search_check -->
+      </class> <!-- github_project.case2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
