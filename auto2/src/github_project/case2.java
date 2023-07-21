@@ -14,14 +14,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-@Test
+
 public class case2 {
 	private WebDriver driver;
 	private ChromeOptions options;
 	private String baseUrl;
 	public String input = null;
 	
-@BeforeTest
+
 public void beforeTest() throws Exception{
  	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
  	options = new ChromeOptions();
@@ -32,7 +32,7 @@ public void beforeTest() throws Exception{
   }
 
 @SuppressWarnings("deprecation")
-@BeforeMethod
+
 public void goToSignInPage() throws Exception{
 	  Actions actions=new Actions(driver);
 	  WebElement signIn=(WebElement) driver.findElement(By.xpath("//a[normalize-space()='Sign up']"
@@ -41,9 +41,11 @@ public void goToSignInPage() throws Exception{
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 }
 
-  @Test
+  @SuppressWarnings("deprecation")
+@Test
   //Login without username then return error message 
   public void signIn() throws Exception{
+	  goToSignInPage();
 	  Actions actions=new Actions(driver);
 	  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  	//input password
@@ -57,12 +59,23 @@ public void goToSignInPage() throws Exception{
 	  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	  	//error message 
-	  	WebElement msg=(WebElement) driver.findElement(By.xpath("//body/div[@class='logged-out env-production page-responsive session-authentication']/div[@class='application-main ']/main/div[@id='login']/div[@id='js-flash-container']/div[1]"));
-	  	String result=(msg.getText());
-	  	System.out.println(result);  	
+	  	WebElement msg=(WebElement) driver.findElement(By.xpath("//body/div[@class='logged-out env-production page-responsive session-authentication']"
+	  			+ "/div[@class='application-main ']/main/div[@id='login']/div[@id='js-flash-container']/div[1]"));
+	  	
+	  	if (msg.isDisplayed()) {
+	  		System.out.println("error message is displayed");  	
+	  	} else {
+	  		System.out.println("error msg isn't displayed");
+	  	}
   }
+  
   @AfterTest
   public void afterTest() {
+	  try {
+          Thread.sleep(5000);
+      } catch (InterruptedException e) {
+          e.printStackTrace();
+      }
 	  driver.quit();
   }
 }

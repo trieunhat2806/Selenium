@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[button clicked]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-19T00:16:25 ICT" name="Default suite" finished-at="2023-07-19T00:16:30 ICT" duration-ms="5064">
+  <suite started-at="2023-07-22T00:46:38 ICT" name="Default suite" finished-at="2023-07-22T00:46:47 ICT" duration-ms="9373">
     <groups>
     </groups>
-    <test started-at="2023-07-19T00:16:25 ICT" name="Default test" finished-at="2023-07-19T00:16:30 ICT" duration-ms="5064">
-      <class name="github_project.case2">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:25 ICT" name="beforeTest" finished-at="2023-07-19T00:16:27 ICT" duration-ms="2754" status="PASS">
+    <test started-at="2023-07-22T00:46:38 ICT" name="Default test" finished-at="2023-07-22T00:46:47 ICT" duration-ms="9373">
+      <class name="github_project.case4">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:github_project.case4@449a4f23]" started-at="2023-07-22T00:46:38 ICT" name="beforeTest" finished-at="2023-07-22T00:46:41 ICT" duration-ms="3295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="goToSignInPage()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:27 ICT" name="goToSignInPage" finished-at="2023-07-19T00:16:28 ICT" duration-ms="754" status="PASS">
+        <test-method signature="signIn()[pri:0, instance:github_project.case4@449a4f23]" started-at="2023-07-22T00:46:41 ICT" name="signIn" finished-at="2023-07-22T00:46:42 ICT" duration-ms="956" status="PASS">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToSignInPage -->
-        <test-method signature="signIn()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:28 ICT" name="signIn" finished-at="2023-07-19T00:16:29 ICT" duration-ms="1274" status="PASS">
-          <reporter-output>
+            <line>
+              <![CDATA[button clicked]]>
+            </line>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:github_project.case2@6e9175d8]" started-at="2023-07-19T00:16:29 ICT" name="afterTest" finished-at="2023-07-19T00:16:30 ICT" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:github_project.case4@449a4f23]" started-at="2023-07-22T00:46:42 ICT" name="afterTest" finished-at="2023-07-22T00:46:47 ICT" duration-ms="5087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- github_project.case2 -->
+      </class> <!-- github_project.case4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

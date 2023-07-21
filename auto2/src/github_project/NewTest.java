@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -17,27 +19,27 @@ import org.testng.annotations.BeforeTest;
 
 
 
-	@Test
-	public class NewTest {
+
+public class NewTest {
 		private WebDriver driver;
 		private ChromeOptions options;
 		private String baseUrl;
 		public String input = null;
-		
-	@BeforeTest
-	public void beforeTest() throws Exception{
+@BeforeTest		
+public void beforeTest() throws Exception{
 	 	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 	 	options = new ChromeOptions();
 		options.addArguments("Start-maximized");
 		driver=new ChromeDriver(options);
+		//go to github.com
 		baseUrl="https://github.com/";
 		driver.get(baseUrl);
 	  }
 	
-	@SuppressWarnings("deprecation")
-	@BeforeMethod
-	public void goToSignInPage() throws Exception{
+@SuppressWarnings("deprecation")
+public void goToSignInPage() throws Exception{
 		  Actions actions=new Actions(driver);
+		  //go to sign in page on github.com
 		  WebElement signIn=(WebElement) driver.findElement(By.xpath("//a[normalize-space()='Sign up']"
 		  		+ "//preceding::a[normalize-space()='Sign in']"));
 		  actions.click(signIn).perform();
@@ -48,21 +50,34 @@ import org.testng.annotations.BeforeTest;
 @Test
 //Login successfully
   public void signIn() throws Exception{
+	  	goToSignInPage();
 	  	Actions actions=new Actions(driver);
 	  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 //input username
+		 
 	  	WebElement username=(WebElement) driver.findElement(By.xpath("//input[@id='password']//preceding::input[@id='login_field']"));
 	  	input="viendanbac024@gmail.com";
 	  	actions.sendKeys(username,input).perform();
-	  	//input password
+	  	Reporter.log("username entered");
+	  	
+	  	
 	  	WebElement password=(WebElement) driver.findElement(By.xpath("//input[@id='password']"));
 	  	input="Lmaoxd@123";
 	  	actions.sendKeys(password,input).perform();
-	  	//click
+	  	Reporter.log("password entered");
+	  	
 	  	WebElement button=(WebElement) driver.findElement(By.xpath("//input[@name='commit']"));
 	  	actions.click(button).perform();
+	  	Reporter.log("button clicked");
+	  	
+	  
+	  	WebElement Homepage=(WebElement) driver.findElement(By.xpath("//a[@aria-label='Homepage ']//*[name()='svg']"));
+	  	if(Homepage.isDisplayed()) {
+	  		System.out.println("Login successful");
+	  	} else {
+	  		System.out.println("Login failed");
+	  	}
+	  	Reporter.log("Homepage is displayed");
   }
-  
 
 @AfterTest
   public void afterTest() {

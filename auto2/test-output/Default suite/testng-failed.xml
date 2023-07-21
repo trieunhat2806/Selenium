@@ -5,10 +5,8 @@
     <classes>
       <class name="github_project.NewTest">
         <methods>
-          <include name="goToSignInPage"/>
           <include name="afterTest"/>
           <include name="signIn"/>
-          <include name="beforeTest"/>
         </methods>
       </class> <!-- github_project.NewTest -->
     </classes>
