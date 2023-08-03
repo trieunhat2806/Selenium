@@ -65,15 +65,18 @@ public class case3 {
 	  	//checkpoint
 		WebElement msg=(WebElement) driver.findElement(By.xpath("//body/div[@class='logged-out env-production page-responsive session-authentication']"
 	  			+ "/div[@class='application-main ']/main/div[@id='login']/div[@id='js-flash-container']/div[1]"));
+		
 		  	if (msg.isDisplayed()) {
-		  		System.out.println("error message is displayed");  	
+		  		System.out.println("error message is displayed"); 
+		  		Reporter.log("error message is displayed");
 		  	} else {
 		  		System.out.println("error msg isn't displayed");
+		  		Reporter.log("error message isn't displayed");
 		  	}
 	  }
 	
 	@AfterTest
-	public void afterTest() {
+	public void afterTest() throws Exception{
 		  try {
 	          Thread.sleep(5000);
 	      } catch (InterruptedException e) {

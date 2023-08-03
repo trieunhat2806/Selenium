@@ -51,36 +51,39 @@ public void goToSignInPage() throws Exception{
 //Login successfully
   public void signIn() throws Exception{
 	  	goToSignInPage();
-	  	Actions actions=new Actions(driver);
+	  	
 	  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 
 	  	WebElement username=(WebElement) driver.findElement(By.xpath("//input[@id='password']//preceding::input[@id='login_field']"));
 	  	input="viendanbac024@gmail.com";
-	  	actions.sendKeys(username,input).perform();
+	  	username.sendKeys(input);
 	  	Reporter.log("username entered");
 	  	
 	  	
 	  	WebElement password=(WebElement) driver.findElement(By.xpath("//input[@id='password']"));
 	  	input="Lmaoxd@123";
-	  	actions.sendKeys(password,input).perform();
+	  	password.sendKeys(input);
 	  	Reporter.log("password entered");
 	  	
 	  	WebElement button=(WebElement) driver.findElement(By.xpath("//input[@name='commit']"));
-	  	actions.click(button).perform();
+	  	button.click();
 	  	Reporter.log("button clicked");
 	  	
-	  
+	  	//checkpoint
 	  	WebElement Homepage=(WebElement) driver.findElement(By.xpath("//a[@aria-label='Homepage ']//*[name()='svg']"));
+	  	
 	  	if(Homepage.isDisplayed()) {
 	  		System.out.println("Login successful");
+	  		Assert.assertTrue(true);
 	  	} else {
 	  		System.out.println("Login failed");
+	  		Assert.assertTrue(false);
 	  	}
 	  	Reporter.log("Homepage is displayed");
   }
 
 @AfterTest
-  public void afterTest() {
+  public void afterTest() throws Exception{
 	  try {
           Thread.sleep(5000);
       } catch (InterruptedException e) {
