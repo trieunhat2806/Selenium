@@ -2,30 +2,63 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
+      <![CDATA[successfully proceeded to loginPage]]>
+    </line>
+    <line>
+      <![CDATA[username entered]]>
+    </line>
+    <line>
+      <![CDATA[password entered]]>
+    </line>
+    <line>
       <![CDATA[button clicked]]>
     </line>
+    <line>
+      <![CDATA[login successful]]>
+    </line>
+    <line>
+      <![CDATA[send feedback]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-22T00:46:38 ICT" name="Default suite" finished-at="2023-07-22T00:46:47 ICT" duration-ms="9373">
+  <suite started-at="2023-08-04T00:23:51 ICT" name="Default suite" finished-at="2023-08-04T00:24:00 ICT" duration-ms="9507">
     <groups>
+      <group name="case 1">
+        <method signature="Testcase_Login.test()[pri:0, instance:j_testcase_github.Testcase_Login@7161d8d1]" name="test" class="j_testcase_github.Testcase_Login"/>
+      </group> <!-- case 1 -->
     </groups>
-    <test started-at="2023-07-22T00:46:38 ICT" name="Default test" finished-at="2023-07-22T00:46:47 ICT" duration-ms="9373">
-      <class name="github_project.case4">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:github_project.case4@449a4f23]" started-at="2023-07-22T00:46:38 ICT" name="beforeTest" finished-at="2023-07-22T00:46:41 ICT" duration-ms="3295" status="PASS">
+    <test started-at="2023-08-04T00:23:51 ICT" name="Default test" finished-at="2023-08-04T00:24:00 ICT" duration-ms="9507">
+      <class name="j_testcase_github.Testcase_Login">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:j_testcase_github.Testcase_Login@7161d8d1]" started-at="2023-08-04T00:23:51 ICT" name="testSetup" finished-at="2023-08-04T00:23:53 ICT" duration-ms="2485" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[successfully proceeded to loginPage]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="signIn()[pri:0, instance:github_project.case4@449a4f23]" started-at="2023-07-22T00:46:41 ICT" name="signIn" finished-at="2023-07-22T00:46:42 ICT" duration-ms="956" status="PASS">
+        </test-method> <!-- testSetup -->
+        <test-method signature="test()[pri:0, instance:j_testcase_github.Testcase_Login@7161d8d1]" started-at="2023-08-04T00:23:53 ICT" name="test" finished-at="2023-08-04T00:23:55 ICT" duration-ms="1787" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[username entered]]>
+            </line>
+            <line>
+              <![CDATA[password entered]]>
+            </line>
             <line>
               <![CDATA[button clicked]]>
             </line>
+            <line>
+              <![CDATA[login successful]]>
+            </line>
+            <line>
+              <![CDATA[send feedback]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:github_project.case4@449a4f23]" started-at="2023-07-22T00:46:42 ICT" name="afterTest" finished-at="2023-07-22T00:46:47 ICT" duration-ms="5087" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:j_testcase_github.Testcase_Login@7161d8d1]" started-at="2023-08-04T00:23:55 ICT" name="afterTest" finished-at="2023-08-04T00:24:00 ICT" duration-ms="5198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- github_project.case4 -->
+      </class> <!-- j_testcase_github.Testcase_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

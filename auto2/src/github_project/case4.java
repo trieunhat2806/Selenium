@@ -59,7 +59,7 @@ public class case4 {
 		  	}
 	  }
 		@AfterTest
-	public void afterTest() {
+	public void afterTest() throws Exception {
 		  try {
 	          Thread.sleep(5000);
 	      } catch (InterruptedException e) {
