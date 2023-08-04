@@ -5,8 +5,8 @@
     <classes>
       <class name="j_testcase_github.Testcase_Login">
         <methods>
-          <include name="test"/>
           <include name="testSetup"/>
+          <include name="test"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- j_testcase_github.Testcase_Login -->
