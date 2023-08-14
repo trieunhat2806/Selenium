@@ -20,22 +20,22 @@
       <![CDATA[send feedback]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-08-04T19:07:30 ICT" name="Default suite" finished-at="2023-08-04T19:08:03 ICT" duration-ms="33193">
+  <suite started-at="2023-08-14T18:32:39 ICT" name="Default suite" finished-at="2023-08-14T18:32:50 ICT" duration-ms="10317">
     <groups>
       <group name="case 1">
-        <method signature="Testcase_Login.test()[pri:0, instance:j_testcase_github.Testcase_Login@543295b0]" name="test" class="j_testcase_github.Testcase_Login"/>
+        <method signature="Testcase_Login.test()[pri:0, instance:j_testcase_github.Testcase_Login@563f38c4]" name="test" class="j_testcase_github.Testcase_Login"/>
       </group> <!-- case 1 -->
     </groups>
-    <test started-at="2023-08-04T19:07:30 ICT" name="Default test" finished-at="2023-08-04T19:08:03 ICT" duration-ms="33193">
+    <test started-at="2023-08-14T18:32:39 ICT" name="Default test" finished-at="2023-08-14T18:32:50 ICT" duration-ms="10317">
       <class name="j_testcase_github.Testcase_Login">
-        <test-method is-config="true" signature="testSetup()[pri:0, instance:j_testcase_github.Testcase_Login@543295b0]" started-at="2023-08-04T19:07:30 ICT" name="testSetup" finished-at="2023-08-04T19:07:33 ICT" duration-ms="2828" status="PASS">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:j_testcase_github.Testcase_Login@563f38c4]" started-at="2023-08-14T18:32:39 ICT" name="testSetup" finished-at="2023-08-14T18:32:42 ICT" duration-ms="2875" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[successfully proceeded to loginPage]]>
             </line>
           </reporter-output>
         </test-method> <!-- testSetup -->
-        <test-method signature="test()[pri:0, instance:j_testcase_github.Testcase_Login@543295b0]" started-at="2023-08-04T19:07:33 ICT" name="test" finished-at="2023-08-04T19:07:58 ICT" duration-ms="25129" status="PASS">
+        <test-method signature="test()[pri:0, instance:j_testcase_github.Testcase_Login@563f38c4]" started-at="2023-08-14T18:32:42 ICT" name="test" finished-at="2023-08-14T18:32:45 ICT" duration-ms="2203" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[username entered]]>
@@ -54,7 +54,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:j_testcase_github.Testcase_Login@543295b0]" started-at="2023-08-04T19:07:58 ICT" name="afterTest" finished-at="2023-08-04T19:08:03 ICT" duration-ms="5194" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:j_testcase_github.Testcase_Login@563f38c4]" started-at="2023-08-14T18:32:45 ICT" name="afterTest" finished-at="2023-08-14T18:32:50 ICT" duration-ms="5199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
